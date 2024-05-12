@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web En Entorno Cliente</title>
+</head>
+<body>
+    <br>
+    <br>
+    <table border="1">
+        <thead>
+            <th  width="175" ><p id="res">Sin resultado</p>
+        </thead>
+        <tbody>
+
+                <tr>
+                    <td>
+                        <button onclick="raizcua();">
+                        raiz
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="log();">
+                        log
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="PI();">
+                        PI
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="cuboboton();">
+                        Cubo
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="sin();">
+                        sin
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="cos();">
+                        cos
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="tan();">
+                        tan
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="cuadradoboton();">
+                        cuadrado
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="circulo();">
+                        C
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="div();">
+                        /
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="mult();">
+                        *
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="del();">
+                        DEL
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="num7();">
+                        7
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="num8();">
+                        8
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="num9();">
+                        9
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="resta();">
+                        -
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="num4();">
+                        4
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="num5();">
+                        5
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="num6()">
+                        6
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="mas();">
+                        +
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="num1();">
+                        1
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="num2();">
+                        2
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="num3();">
+                        3
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="igual();">
+                        =
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="num0();">
+                        0
+                        </button>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <button onclick="punto();">
+                        .
+                        </button>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+    <script>
+        numero1 = ""
+        numero2 = ""
+        ope = ""
+        boton = false
+        function num1() {
+            if (boton == false) {
+                numero1 += "1"
+
+            }else{
+                numero2 += "1"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num2() {
+            if (boton == false) {
+                numero1 += "2"
+
+            }else{
+                numero2 += "2"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num3() {
+            if (boton == false) {
+                numero1 += "3"
+
+            }else{
+                numero2 += "3"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num4() {
+            if (boton == false) {
+                numero1 += "4"
+
+            }else{
+                numero2 += "4"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num5() {
+            if (boton == false) {
+                numero1 += "5"
+
+            }else{
+                numero2 += "5"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num6() {
+            if (boton == false) {
+                numero1 += "6"
+
+            }else{
+                numero2 += "6"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num7() {
+            if (boton == false) {
+                numero1 += "7"
+
+            }else{
+                numero2 += "7"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num8() {
+            if (boton == false) {
+                numero1 += "8"
+
+            }else{
+                numero2 += "8"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num9() {
+            if (boton == false) {
+                numero1 += "9"
+
+            }else{
+                numero2 += "9"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function num0() {
+            if (boton == false) {
+                numero1 += "0"
+
+            }else{
+                numero2 += "0"
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+        function punto() {
+            if (boton == false) {
+                numero1 += "."
+
+            }else{
+                numero2 += "."
+            }
+
+        }
+
+        function mas() {
+            ope = "+"
+            res = numero1 + ope
+            console.log(res)
+            document.getElementById("res").innerHTML = res
+            boton = true
+
+        }
+        function resta() {
+            ope = "-"
+            res = numero1 + ope
+            console.log(res)
+            document.getElementById("res").innerHTML = res
+            boton = true
+
+        }
+        function mult() {
+            ope = "*"
+            res = numero1 + ope
+            console.log(res)
+            document.getElementById("res").innerHTML = res
+            boton = true
+
+        }
+        function div() {
+            ope = "/"
+            res = numero1 + ope
+            console.log(res)
+            document.getElementById("res").innerHTML = res
+            boton = true
+
+        }
+        function igual() {
+            res += numero2
+            console.log(res)
+            ress = eval(res)
+            console.log(ress)
+            document.getElementById("res").innerHTML = (res + " = " + ress)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+
+        }
+        function del() {
+
+            document.getElementById("res").innerHTML = ("Sin resultado")
+            numero1 = ""
+            numero2 = ""
+            boton = false
+
+        }
+        function raizcua() {
+
+            raiz = Math.sqrt(numero1)
+            document.getElementById("res").innerHTML = ("La raiz de " + numero1 + " es " + raiz)
+            numero1 = ""
+
+            boton = false
+        }
+        function cuadradoboton() {
+
+            cuadrado = numero1 * numero1
+            document.getElementById("res").innerHTML = ("El cuadrado de " + numero1 + " es " + cuadrado)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+        }
+        function cuboboton() {
+
+            cubo = (numero1 * numero1) * numero1
+            document.getElementById("res").innerHTML = ("El cubo de " + numero1 + " es " + cubo)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+        }
+        function cos() {
+
+            coss = Math.cos(numero1)
+            document.getElementById("res").innerHTML = ("El coseno de " + numero1 + " es " + coss)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+        }
+        function tan() {
+
+            tann = Math.tan(numero1)
+            document.getElementById("res").innerHTML = ("La tangente de " + numero1 + " es " + tann)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+        }
+        function sin() {
+
+            sinn = Math.sin(numero1)
+            document.getElementById("res").innerHTML = ("El seno de " + numero1 + " es " + sinn)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+        }
+        function log() {
+
+            logg = Math.log(numero1)
+            document.getElementById("res").innerHTML = ("El logaritmo de " + numero1 + " es " + logg)
+            numero1 = ""
+            numero2 = ""
+            boton = false
+        }
+        function PI() {
+            if (boton == false) {
+                numero1 += Math.PI
+
+            }else{
+                numero2 += Math.PI
+            }
+            console.log(numero1)
+            console.log(numero2)
+        }
+    </script>
+</body>
+</html>

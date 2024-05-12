@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web En Entorno Cliente</title>
+    <link href="juego2.css" rel="stylesheet">
+</head>
+<body>
+    <script src="juegojs.js" ></script>
+    <br>
+    <br>
+    <div align="center">
+        <button onclick="generar(0);">
+            Nuevo Tablero
+        </button>
+    </div>
+    <table class="tabla2" border="1" align="center">
+        <tbody>
+            <tr width="75px" align="center">
+                <td width="75px" height="110px" id="td0p0">
+                    <div>
+                        <div id="l0p0">
+                            <button onclick="imprimir(0, 0);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll0p0"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td width="75px" id="td0p1">
+                    <div>
+                        <div id="l0p1">
+                            <button onclick="imprimir(0, 1);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll0p1"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td width="75px" id="td0p2">
+                    <div>
+                        <div id="l0p2">
+                            <button onclick="imprimir(0, 2);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll0p2"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td width="75px" id="td0p3">
+                    <div>
+                        <div id="l0p3">
+                            <button onclick="imprimir(0, 3);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll0p3"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td width="75px" id="td0p4">
+                    <div>
+                        <div id="l0p4">
+                            <button onclick="imprimir(0, 4);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll0p4"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td width="75px">
+                    <p id="fila0">P</p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td id="td1p0" height="110px">
+                    <div>
+                        <div id="l1p0" >
+                            <button onclick="imprimir(1, 0);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll1p0"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td1p1">
+                    <div>
+                        <div id="l1p1" >
+                            <button onclick="imprimir(1, 1);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll1p1"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td1p2">
+                    <div>
+                        <div id="l1p2">
+                            <button onclick="imprimir(1, 2);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll1p2"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td1p3">
+                    <div>
+                        <div id="l1p3">
+                            <button onclick="imprimir(1, 3);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll1p3"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td1p4">
+                    <div>
+                        <div id="l1p4">
+                            <button onclick="imprimir(1, 4);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll1p4"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td>
+                    <p id="fila1">P</p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td id="td2p0" height="110px">
+                    <div>
+                        <div id="l2p0">
+                            <button onclick="imprimir(2, 0);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll2p0"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td2p1">
+                    <div>
+                        <div id="l2p1">
+                            <button onclick="imprimir(2, 1);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll2p1"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td2p2" >
+                    <div>
+                        <div id="l2p2">
+                            <button onclick="imprimir(2, 2);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll2p2"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td2p3">
+                    <div>
+                        <div id="l2p3">
+                            <button onclick="imprimir(2, 3);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll2p3"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td2p4">
+                    <div>
+                        <div id="l2p4">
+                            <button onclick="imprimir(2, 4);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll2p4"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td>
+                    <p id="fila2">P</p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td id="td3p0" height="110px">
+                    <div>
+                        <div id="l3p0">
+                            <button onclick="imprimir(3, 0);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll3p0"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td3p1">
+                    <div>
+                        <div id="l3p1">
+                            <button onclick="imprimir(3, 1);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll3p1"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td3p2">
+                    <div>
+                        <div id="l3p2">
+                            <button onclick="imprimir(3, 2);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll3p2"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td3p3">
+                    <div>
+                        <div id="l3p3">
+                            <button onclick="imprimir(3, 3);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll3p3"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td3p4">
+                    <div>
+                        <div id="l3p4">
+                            <button onclick="imprimir(3, 4);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll3p4"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td>
+                    <p id="fila3">P</p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td id="td4p0" height="110px">
+                    <div>
+                        <div id="l4p0">
+                            <button onclick="imprimir(4, 0);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll4p0"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td4p1">
+                    <div>
+                        <div id="l4p1">
+                            <button onclick="imprimir(4, 1);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll4p1"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td4p2">
+                    <div>
+                        <div id="l4p2">
+                            <button onclick="imprimir(4, 2);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll4p2"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td4p3">
+                    <div>
+                        <div id="l4p3">
+                            <button onclick="imprimir(4, 3);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll4p3"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td id="td4p4">
+                    <div>
+                        <div id="l4p4">
+                            <button onclick="imprimir(4, 4);">
+                                &#9760
+                            </button>
+                        </div>
+                    </div>
+                    <p id="ll4p4"><img src="pokemon.png" width="50px" height="50px" alt="Campo"></p>
+                </td>
+                <td>
+                    <p id="fila4">P</p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <p id="columna0">P</p>
+                </td>
+                <td>
+                    <p id="columna1">P</p>
+                </td>
+                <td>
+                    <p id="columna2">P</p>
+                </td>
+                <td>
+                    <p id="columna3">P</p>
+                </td>
+                <td>
+                    <p id="columna4">P</p>
+                </td>
+                <td>
+                    <p id="totalp" >P</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+
+    </script>
+</body>
+</html>

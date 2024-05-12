@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <p id="l"></p>
+    <br>
+    <p id="p"></p>
+    <br>
+    <p id="o"></p>
+    <br>
+    <p id="y"></p>
+    <br>
+    <p id="q"></p>
+    <label for="val">valor</label>
+    <input type="text" name="val" id="val" onchange="actualizar1()">
+    <button onclick="comprobar();">
+        comprobar
+      </button>
+
+    <script>
+        function actualizar1() {
+
+        valor = document.getElementById('val').value;
+        pos = array.indexOf(parseInt(valor))
+        console.log(pos)
+        }
+
+        array = []
+        for (i = 0; i <= 21; i++) {
+            if ((i % 2) == 1) {
+                array.push(i)
+
+            }
+        }
+        array1 = [...array]
+        array2 = [...array]
+        sum = 0
+        for (i = 0; i < array.length; i++) {
+            sum += array[i]
+
+        }
+        array1.sort(function(a, b) {return b-a})
+        document.getElementById("l").innerHTML = "Suma de todos los componentes del array: " + sum
+        document.getElementById("p").innerHTML = "array invertido: " + array1
+        document.getElementById("o").innerHTML = "Array original: " + array2
+        document.getElementById("q").innerHTML = "Quita valores de: " + array
+
+        function comprobar() {
+
+            if (pos in array) {
+                document.getElementById("y").innerHTML = "La posicion es: " + pos
+                array.splice(pos, 1)
+                document.getElementById("q").innerHTML = "El nuevo array es: " + array
+                pos = (-1)
+            }else{
+                document.getElementById("y").innerHTML = "Ese valor no esta en el array"
+
+            }
+
+        }
+    </script>
+</body>
+</html>

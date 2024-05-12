@@ -1,0 +1,5 @@
+.a { table-layout: auto;} /* Columnas se ajustan al contenido*/
+.b { table-layout: auto; width: 100%; } /* Columnas se ajustan al
+contenido y al 100% */
+.c { table-layout: fixed; width: 400px; } /* Columnas con ancho fijo,
+hay que especificar el ancho con la propiedad width */
