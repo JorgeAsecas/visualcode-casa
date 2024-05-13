@@ -112,20 +112,19 @@ footer {
     border-top-color: #593600;
 }
 
-footer input {
-    position: fixed;
-    bottom: 50px;
-    left: 50px;
+.donarboton {
+width: 70px;
+height: 70px;
+margin-top: 100px;
     border: 3px solid;
     border-radius: 5px;
     border-color: #000000;
 }
 
-footer>img {
-    position: fixed;
-    bottom: 0px;
-    left: 40px;
-
+.donarboton:hover {
+    background-color: #03B300;
+    color: #000000;
+    font-weight: 600;
 }
 
 footer ul {
@@ -646,4 +645,41 @@ font-size: 1em;
 .tab .bloquetab.activot{
     opacity: 1;
 
+}
+
+/*
+  Paginacion
+
+
+  */
+
+  .paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#000000;
+	background:#D88200;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#eb8d00;
+}
+
+.paginacion ul li .active {
+	background:#eb8d00;
+	font-weight:bold;
 }
