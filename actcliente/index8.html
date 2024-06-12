@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" id="seccion">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web En Entorno Cliente</title>
+</head>
+<body id="cuerpo" >
+<main>
+
+    <form id="form" method="POST" onsubmit="return true"  enctype ="text/plain">
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Introduce tu nombre</label>
+        <input id="nombre" type="text" name="Nombre"><br>
+        <p>Mensaje</p>
+        <textarea name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="MENSAJE">
+
+        </textarea>
+</fieldset>
+<p>Elige un color:</p>
+    <input type="radio" id="color1" name="Color" value="Rojo">
+    <label for="opcion1">Rojo</label><br>
+    <input type="radio" id="color2" name="Color" value="Verde">
+    <label for="opcion2">Verde</label><br>
+    <input type="radio" id="color3" name="Color" value="Azul">
+    <label for="opcion2">Azul</label><br>
+
+    <br><br>
+    <label for="asignatura">Selecciona una asignatura</label>
+    <select id="asignatura" name="Asignatura">
+        <option value="Lengua">Lengua</option>
+        <option value="Matematicas">Matematicas</option>
+        <option value="Historia">Historia</option>
+        <option value="Geografia">Geografia</option>
+        <option value="Quimica">Quimica</option>
+        <option value="Biologia">Biologia</option>
+        <option value="Fisica">Fisica</option>
+      </select>
+      <br><br>
+      <p>Selecciona los dias con disponibilidad</p>
+        <label for="check">Lunes</label>
+        <input type="checkbox" id="check" value="Lunes" name="DiasconDisponibilidad"><br>
+        <label for="check">Martes</label>
+        <input type="checkbox" id="check" value="Martes" name="DiasconDisponibilidad"><br>
+        <label for="check">Miercoles</label>
+        <input type="checkbox" id="check" value="Miercoles" name="DiasconDisponibilidad"><br>
+        <label for="check">Jueves</label>
+        <input type="checkbox" id="check" value="Jueves" name="DiasconDisponibilidad"><br>
+        <label for="check">Viernes</label>
+        <input type="checkbox" id="check" value="Viernes" name="DiasconDisponibilidad"><br>
+        <br><br>
+
+
+        <label for="dia">Selecciona el dia preferente</label>
+    <select id="dia" name="Dia preferente">
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miercoles">Miercoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+    </select>
+
+
+
+
+
+
+    <br><br>
+
+
+    <input type="submit" value="Haz click para enviar informacion">
+    <a href="mailto:correo@iesdonana.org" id="maill" ></a>
+    <input type="reset" value="Reset"/>
+</form>
+
+<script src="script8.js"></script>
+</main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" id="seccion">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web En Entorno Cliente</title>
+</head>
+<body>
+<main>
+    <form onsubmit="return validaFormulario(event)">
+        <label for="dni">DNI</label>
+        <input id="dni" type="text" name="dni" pattern="[0-9]{8}[A-Za-z]" required title="Formato válido: 99999999X"><br>
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" name="nombre" pattern="[A-Za-z\s]{1,50}" required title="Al menos un nombre y un apellido, máximo dos nombres y dos apellidos"><br>
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input id="fecha" type="date" name="fecha" required><br>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required><br>
+
+        <label for="pagina">Página web</label>
+        <input id="pagina" type="url" name="pagina" required><br>
+
+        <label for="contraseña">Contraseña</label>
+        <input id="contraseña" type="password" name="contraseña" pattern=".{8,10}" required title="Debe tener entre 8 y 10 caracteres"><br>
+
+        <label for="ccontraseña">Confirmar contraseña</label>
+        <input id="ccontraseña" type="password" name="ccontraseña" required pattern=".{8,10}" required title="Debe tener entre 8 y 10 caracteres"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button onclick="leerCookies()">Leer Datos Guardados</button>
+</main>
+<script>
+    function validaDNI(dni) {
+        var letras = 'TRWAGMYFPDXBNJZSQVHLCKE';
+        var numero = dni.substr(0, 8);
+        var letra = dni.substr(8, 1).toUpperCase();
+        if (/^\d{8}[A-Z]$/.test(dni)) {
+            return letra === letras.charAt(numero % 23);
+        }
+        return false;
+    }
+
+    function validaFormulario(e) {
+        var dniInput = document.getElementById("dni");
+        if (!validaDNI(dniInput.value)) {
+            dniInput.setCustomValidity("El DNI no es válido.");
+            e.preventDefault();
+            return false;
+        } else {
+            dniInput.setCustomValidity("");
+        }
+
+        // Guardar datos en cookies si el formulario es válido
+        guardarDatosEnCookies();
+
+        if (!confirm("Pulsa aceptar para enviar")) {
+            e.preventDefault();
+            return false;
+        }
+        return true;
+    }
+
+    function guardarDatosEnCookies() {
+        // Obtener valores del formulario
+        var dni = document.getElementById("dni").value;
+        var nombre = document.getElementById("nombre").value;
+        var fecha = document.getElementById("fecha").value;
+        var email = document.getElementById("email").value;
+        var pagina = document.getElementById("pagina").value;
+        var contraseña = document.getElementById("contraseña").value;
+        var ccontraseña = document.getElementById("ccontraseña").value;
+
+        // Guardar valores en cookies
+        document.cookie = `dni=${dni}`;
+        document.cookie = `nombre=${nombre}`;
+        document.cookie = `fecha=${fecha}`;
+        document.cookie = `email=${email}`;
+        document.cookie = `pagina=${pagina}`;
+        document.cookie = `contraseña=${contraseña}`;
+        document.cookie = `ccontraseña=${ccontraseña}`;
+    }
+
+    function leerCookies() {
+        // Leer cookies
+        var cookies = document.cookie.split(';');
+        var cookieData = {};
+        cookies.forEach(cookie => {
+            var parts = cookie.split('=');
+            var key = parts[0].trim();
+            var value = parts[1];
+            cookieData[key] = value;
+        });
+
+        // Mostrar datos de las cookies
+        alert("Datos Guardados en Cookies:\n" +
+              "DNI: " + cookieData.dni + "\n" +
+              "Nombre: " + cookieData.nombre + "\n" +
+              "Fecha de nacimiento: " + cookieData.fecha + "\n" +
+              "Email: " + cookieData.email + "\n" +
+              "Página web: " + cookieData.pagina + "\n" +
+              "Contraseña: " + cookieData.contraseña + "\n" +
+              "Confirmar contraseña: " + cookieData.ccontraseña);
+    }
+</script>
+</body>
+</html>
