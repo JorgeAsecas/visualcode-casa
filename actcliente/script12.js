@@ -30,3 +30,12 @@ function validaFormulario(e) {
     }
     return true;
 }
+//const inputs = document.querySelectorAll('input');
+ //   inputs.forEach(input => {
+   //     input.addEventListener('blur', function() {
+//            if (!this.checkValidity()) {
+  //              this.value = '';
+    //        }
+//        });
+  //  });
+dfghsdfgsdf
