@@ -1,9 +1,9 @@
 function carga() {
-    // obtiene el total de votos entre todas las opciones
+
     var totalVotos = parseInt(getCookie("IOS") || 0) + parseInt(getCookie("Android") || 0) +
                      parseInt(getCookie("Windows Phone") || 0) + parseInt(getCookie("Otro") || 0);
 
-    // actualiza el porcentaje compartido en cada barra de progreso
+
     document.querySelector('#sistema1').setAttribute("data-content", Math.round((parseInt(getCookie("IOS") || 0) / totalVotos) * 100) + "%");
     document.querySelector('#porcentaje1').innerText = Math.round((parseInt(getCookie("IOS") || 0) / totalVotos) * 100) + "%";
 
@@ -16,7 +16,7 @@ function carga() {
     document.querySelector('#sistema4').setAttribute("data-content", Math.round((parseInt(getCookie("Otro") || 0) / totalVotos) * 100) + "%");
     document.querySelector('#porcentaje4').innerText = Math.round((parseInt(getCookie("Otro") || 0) / totalVotos) * 100) + "%";
 
-    // actualiza el valor de cada barra de progreso
+
     document.querySelector('#sistema1').setAttribute("value" , parseInt(getCookie("IOS") || 0));
     document.querySelector('#sistema2').setAttribute("value" , parseInt(getCookie("Android") || 0));
     document.querySelector('#sistema3').setAttribute("value" , parseInt(getCookie("Windows Phone") || 0));
@@ -52,10 +52,10 @@ function submitt(eve) {
     objetodatos = Object.fromEntries(datos.entries());
     sis = Object.values(objetodatos);
 
-    // incrementa el conteo de votos para el sistema operativo seleccionado
+
     if (sis == "IOS" || sis == "Android" || sis == "Windows Phone" || sis == "Otro") {
         var votoActual = parseInt(getCookie(sis) || 0);
         setCookie(sis, votoActual + 1);
-        carga(); // actualiza los datos de carga despues de cada voto
+        carga();
     }
 }

@@ -34,7 +34,7 @@ document.getElementById("form").addEventListener('submit', submitt);
         let diasDisponibilidad = Array.from(form.querySelectorAll('input[name="DiasconDisponibilidad"]:checked'));
         let diaPreferente = "";
 
-        // Obtiene el último día marcado como disponible
+
         if (diasDisponibilidad.length > 0) {
             diaPreferente = diasDisponibilidad[diasDisponibilidad.length - 1].value;
         }
